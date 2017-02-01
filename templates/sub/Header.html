@@ -31,9 +31,9 @@
         <div class="container">
             <div class="row">
 
-                <div class="logo col-xs-8 col-sm-8 col-md-2 col-lg-2">
+                <div class="logo">
                     <a href="/" title="STORE Totem" class="link-logo">
-                        <img src="http://aaxis.vteximg.com.br/arquivos/header-logo-lupo.jpg"/>
+                        <img src="http://aaxis.vteximg.com.br/arquivos/header-logo-lupo.png"/>
                     </a>
                     <!-- .logo -->
                 </div>
@@ -54,59 +54,63 @@
                                 <li class="link-login"><a href="/account" title="Fazer Login">Entrar</a></li>
                                 <li class="link-orders"><a href="/account/orders" title="Meus Pedidos">Meus Pedidos</a></li>
                             </ul>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <vtex.cmc:fullTextSearchBox/>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+    <div class="row line-bottom">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <vtex.cmc:fullTextSearchBox/>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs hidden-sm">
+            <div class="hidden-xs hidden-sm col-md-33 col-lg-3">
+                
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs hidden-sm">
+                <a href="#" title="Meus Pedidos" class="btn btn-default nowrap no-bg">
+                    <span class="visible-lg visible-md inline">CONTATO</span> <i class="fa fa-comment M-start-5" aria-hidden="true"></i>
+                </a>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs hidden-sm">
+                <a href="/account" title="Fazer Login" class="btn btn-default btn-login nowrap no-bg">
+                    <span class="visible-lg visible-md inline">ENTRAR</span> <i class="fa fa-user M-start-5" aria-hidden="true"></i>
+                </a>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="mini-cart col-mini-cart col-xs-1 col-sm-1 col-md-3 col-lg-2 hidden-xs">
+                    <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-mini-cart nowrap no-bg">
+                        <span class="hidden-sm mini-cart-label inline hidden-xs hidden-sm">CARRINHO</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                    <div id="mini-cart-admake-aux" class="hidden">
+                        <vtex.cmc:miniCart />
+                        <vtex.cmc:AmountItemsInCart />
+                    </div><!-- #mini-cart-admake-aux -->
+                    <div id="mini-cart-admake" style="display: none;">
+                        <div class="mini-cart-header"></div>
+                        <div class="mini-cart-itens">
+                            <!-- recebe itens -->
+                        </div>
+                        <div class="mini-cart-footer">
+                            <div class="mini-cart-totais">
+                                <strong id="mini-cart-admake-total" class="pull-right"><!-- recebe valor total --></strong>
+                                <span>Total</span>
+                            </div>
+                            <div class="mini-cart-botao">
+                                <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar Pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .mini-cart -->
+            </div>
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 </div><!-- .button-menu-xs -->
-                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-                    <div class="row line-bottom">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <vtex.cmc:fullTextSearchBox/>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs hidden-sm">
-                            <div class="hidden-xs hidden-sm col-md-33 col-lg-3">
-                                
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs hidden-sm">
-                                <a href="#" title="Meus Pedidos" class="btn btn-default nowrap no-bg">
-                                    <span class="visible-lg visible-md inline">CONTATO</span> <i class="fa fa-comment M-start-5" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            
-                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs hidden-sm">
-                                <a href="/account" title="Fazer Login" class="btn btn-default btn-login nowrap no-bg">
-                                    <span class="visible-lg visible-md inline">ENTRAR</span> <i class="fa fa-user M-start-5" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            
-                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                <div class="mini-cart col-mini-cart col-xs-1 col-sm-1 col-md-3 col-lg-2 hidden-xs">
-                                    <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-mini-cart nowrap no-bg">
-                                        <span class="hidden-sm mini-cart-label inline hidden-xs hidden-sm">CARRINHO</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </a>
-                                    <div id="mini-cart-admake-aux" class="hidden">
-                                        <vtex.cmc:miniCart />
-                                        <vtex.cmc:AmountItemsInCart />
-                                    </div><!-- #mini-cart-admake-aux -->
-                                    <div id="mini-cart-admake" style="display: none;">
-                                        <div class="mini-cart-header"></div>
-                                        <div class="mini-cart-itens">
-                                            <!-- recebe itens -->
-                                        </div>
-                                        <div class="mini-cart-footer">
-                                            <div class="mini-cart-totais">
-                                                <strong id="mini-cart-admake-total" class="pull-right"><!-- recebe valor total --></strong>
-                                                <span>Total</span>
-                                            </div>
-                                            <div class="mini-cart-botao">
-                                                <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar Pedido</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- .mini-cart -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div><!-- .row -->
             <div class="row">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
