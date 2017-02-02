@@ -25,9 +25,8 @@ span#spnRatingProdutoTop {
     background: transparent;
 }
 body {
-
-    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1;
+    padding-top: 10em;
 }
 img {
 
@@ -266,7 +265,7 @@ textarea {
 }
 
 .header .logo {
-
+    padding: 5px;
     text-align: center;
 }
 .header .logo a {
@@ -1347,12 +1346,8 @@ textarea {
 
     display: none ! important;
 }
-.product-image .apresentacao .thumbs {
 
-    z-index: 9999;
-}
 .product-image .apresentacao .thumbs li {
-
     display: inline-block;
 
     margin: 0 8px;
@@ -2989,7 +2984,7 @@ textarea {
 
     .header .logo
     {
-        text-align: left;
+        text-align: center;
     }
     .header .search
     {
@@ -3403,10 +3398,7 @@ p.legal-info {
     * Header
     */
 
-fieldset.busca {
-
-    position: relative;
-}
+fieldset.busca {position: relative;}
 fieldset.busca:after {
 
     font-family: 'FontAwesome';
@@ -3424,10 +3416,7 @@ fieldset.busca:after {
 
     right: -87px;
 }
-.header .logo {
 
-    text-align: left;
-}
 .button-menu-xs {
 
     text-align: right;
